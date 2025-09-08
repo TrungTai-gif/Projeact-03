@@ -315,6 +315,7 @@ a {
     border: 16px solid var(--bo);
     border-radius: 4px;
     flex: 1;
+    background: #fff;
 }
 
 .workflow__item:hover {
