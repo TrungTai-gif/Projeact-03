@@ -452,6 +452,7 @@ a {
 }
 
 .member__name {
+    display: inline-block;
     margin-top: 12px;
     color: #10375C;
     font-size: 1.6rem;
