@@ -423,7 +423,7 @@ a {
     width: 100%;
     display: flex;
     margin-top: 70px;
-    overflow-x :auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
 }
 
@@ -462,7 +462,6 @@ a {
 .member__desc {
     font-size: 1.4rem;
     line-height: 1.85;
-    /* font-weight: 300; */
 }
 
 .member__button {
@@ -487,6 +486,76 @@ a {
     background: #2E80CE;
     border-color: #2E80CE;
     color: white;
+    cursor: pointer;
+}
+
+.member__list::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+    height: 8px;
+}
+
+.member__list::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22,24,35,.06);
+}
+
+.member__list::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.member__list::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+.member__container:has(.member__item__btn:hover) > .member__list::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+/* ========================================================================================================================= */
+
+.install {
+    margin-top: 170px;
+}
+
+.install__container {
+    max-width: 1170px;
+    padding-inline: 70px;
+    height: 427px;
+    border-radius: 4px;
+    background: #2E80CE;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.install__left {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+}
+
+.install__right {
+    max-width: 586px;
+}
+
+.install__title {
+    color: #FFFFFF;
+}
+
+.install__desc {
+    color: #FFFFFF;
+}
+
+.install__app {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
 /* ========================================================================================================================= */
