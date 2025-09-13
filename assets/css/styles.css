@@ -16,6 +16,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .container  {
@@ -705,6 +706,124 @@ a {
 .appointment__btn {
     padding: 15px 40px;
     margin-top: 38px;
+}
+
+/* ========================================================================================================================= */
+
+.footer {
+    margin-top: 170px;
+    padding-block: 100px 42px;
+    background: #10375C;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #406181;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 273px;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer__title {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.footer__item > a:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.footer__icon:first-child {
+    background: #2E80CE;
+}
+
+.footer__slogan {
+    color: #A9B3BB;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-top: 21px;
+    max-width: 336px;
+}
+
+.footer__email {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    height: 46px;
+}
+
+.footer__input {
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+    padding: 10px;
+    color: #9CA8B1;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer__input::placeholder {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+.footer__btn {
+    padding: 10px 21px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 1.85;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 28px;
+    color: #AAB3BA;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.85;
+
 }
 
 /* ========================================================================================================================= */
